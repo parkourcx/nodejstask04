@@ -9,6 +9,7 @@ http.get("http://www.pku.edu.cn/about/index.htm", function(res) {
     var news = [];  // 保存解析HTML后的数据
     res.setEncoding('utf-8');
 
+    
     // 抓取页面内容
     res.on('data', function(chunk) {
         html += chunk;
